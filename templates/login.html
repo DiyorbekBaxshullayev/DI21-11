@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <style>
+            /* Orqa fon rasm */
+            body {
+                background-image: url('https://storge.pic2.me/w/560x350/802/57ca8f9944093.webp'); /* Rasm manzili */
+                background-size: cover; /* Rasmni sahifaga moslashtirish */
+                background-position: center; /* Rasmni markazga joylashtirish */
+                background-repeat: no-repeat; /* Rasmni takrorlamaslik */
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                color: #333; /* Matn rangi */
+            }
+    
+            /* Kontent stil */
+            .container {
+                background-color: rgba(255, 255, 255, 0.8); /* Kontent fonini yarim shaffof qilish */
+                padding: 20px;
+                border-radius: 10px;
+                max-width: 800px;
+                margin: 50px auto; /* Markazga joylashtirish */
+                text-align: center;
+            }
+    
+            h1 {
+                color: #444; /* Sarlavha rangi */
+            }
+    
+            p {
+                color: #555; /* Paragraf rangi */
+                font-size: 18px;
+                line-height: 1.6;
+            }
+        </style>
+    </head>
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="/">Bosh Sahifa</a>
+        <a href="/login">Kirish</a>
+    </div>
+
+    <!-- Kontent -->
+    <div class="container">
+        <h1>Xush kelibsiz!</h1>
+        <p>Iltimos, tizimga kirish uchun foydalanuvchi nomi va parolingizni kiriting. Agar hisobingiz bo'lmasa, ro'yxatdan o'tishingiz mumkin.</p>
+        <img src="https://via.placeholder.com/800x400" alt="Login Illustration">
+    </div>
+    {% endblock content %}
+</body>
+</html>
